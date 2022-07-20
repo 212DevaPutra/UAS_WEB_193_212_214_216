@@ -1,0 +1,141 @@
+.judul {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.navbar {
+    width: auto;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover {
+    background-color: red;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: orange;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.avatar {
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.avatar-profil {
+    vertical-align: middle;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.grid-container {
+    /* background: yellow; */
+    display: grid;
+    grid: auto / auto;
+    grid-gap: 10px;
+    padding: 0;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.grid-container .item-news .grid-icon {
+    display: grid;
+    grid: auto / 50px 50px 50px;
+    grid-gap: 10px;
+    padding: 0;
+}
+
+.grid-container .item-news .grid-icon>div {
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    background: grey;
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+}
+
+.pagination a.active {
+    background-color: #ff213f;
+    color: white;
+    border: 1px solid #ff213f;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ccc;
+}
